@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Mahasiswa Baru - UMBima</title>
+  <link rel="icon" href="umbima.jpeg">
+  <link rel="stylesheet" href="Arif-pendaftaran.css">
+</head>
+
+<body>
+  <div class="wrapper-luar">
+    <div class="header">
+      <h2>FORM PENGISIAN DATA CALON MAHASISWA BARU UNIVERSITAS MUHAMMADIYAH BIMA</h2>
+    </div>
+
+    <div class="wrapper-dalam">
+      <form action="" method="post">
+        <div class="nama">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" name="nama" id="nama" placeholder="Nama Lengkap" size="30" required>
+        </div>
+
+        <div class="ttlahir">
+          <label for="ttlahir">Tempat, Tanggal Lahir</label>
+          <input type="text" name="ttlahir" id="ttlahir" placeholder="Tempat Lahir" size="8" required>
+          <input type="date" name="ttlahir" id="ttlahir" required>
+        </div>
+
+        <div class="alamat">
+          <label for="alamat">Alamat</label>
+          <input type="text" name="alamat" id="alamat" placeholder="Alamat" size="30" required>
+        </div>
+
+        <div class="jeniskelamin">
+          <label for="jeniskelamin">Jenis Kelamin</label>
+          <label for="lakilaki"><input type="radio" name="jeniskelamin" id="lakilaki" value="Laki-Laki"
+              required>Laki-Laki</label>
+          <label for="perempuan"><input type="radio" name="jeniskelamin" id="perempuan" value="Perempuan"
+              required>Perempuan</label>
+        </div>
+
+        <div class="agama">
+          <label for="agama">Agama</label>
+          <select name="agama" id="agama">
+            <option value="Islam">Islam</option>
+            <option value="Protestan">Protestan</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Khonghucu">Khonghucu</option>
+          </select>
+        </div>
+
+        <div class="telepon">
+          <label for="telepon">No. Hp/Telepon</label>
+          <input type="tel" name="telepon" id="telepon" placeholder="No. Hp/Telepon" size="30" required
+            pattern="(+62|62|0)[0-9]" maxlength="14" minlength="11">
+        </div>
+
+        <div class="email">
+          <label for="email">E-Mail</label>
+          <input type="email" name="email" id="email" placeholder="E-Mail" size="30" required>
+        </div>
+
+        <div class="sekolah">
+          <label for="sekolah">Asal Sekolah</label>
+          <input type="text" name="sekolah" id="sekolah" placeholder="Asal Sekolah (SMA/SMK/DLL)" size="30" required>
+        </div>
+
+        <div class="prodi">
+          <label for="prodi">Pilih Program Studi</label>
+          <select name="prodi" id="prodi">
+            <option value="S1 Hukum">S1 Hukum</option>
+            <option value="S1 Kewirausahaan">S1 Kewirausahaan</option>
+            <option value="S1 Ilmu Komputer">S1 Ilmu Komputer</option>
+            <option value="S1 Gizi">S1 Gizi</option>
+            <option value="S1 Teknik Sipil">S1 Teknik Sipil</option>
+          </select>
+        </div>
+
+        <div class="kelas">
+          <label for="kelas">Pilih Kelas</label>
+          <label for="reguler">
+            <input type="radio" name="kelas" id="reguler" value="Reguler" required>Reguler
+          </label>
+
+          <label for="ekstensi">
+            <input type="radio" name="kelas" id="ekstensi" value="Ekstensi" required>Ekstensi
+          </label>
+
+        </div>
+
+        <div class="foto">
+          <label for="foto">Upload Foto Latar Biru 4X6</label>
+          <input type="file" name="foto" id="foto" required>
+        </div>
+
+        <div class="button">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
